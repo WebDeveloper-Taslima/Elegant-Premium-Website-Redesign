@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capabilities & Services — VANGUARD ATELIER</title>
+  <meta name="description" content="Explore our bespoke web redesign capabilities: visual architecture, responsive engineering, design systems, and PHP development.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Vanguard Atelier Redesign &bull; Services & Capabilities
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <a href="design-system.html" class="viewport-btn" style="color:var(--gold-primary); text-decoration:none;">Handover Specs</a>
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Overview</a></li>
+              <li class="nav-item"><a href="about.html">Heritage</a></li>
+              <li class="nav-item active"><a href="services.html">Capabilities</a></li>
+              <li class="nav-item"><a href="portfolio.html">Showcase</a></li>
+              <li class="nav-item"><a href="design-system.html">Design System</a></li>
+              <li class="nav-item"><a href="contact.html">Private Booking</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="about.html">Heritage</a></li>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="portfolio.html">Showcase</a></li>
+          <li><a href="design-system.html">Design System</a></li>
+          <li><a href="contact.html">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section style="padding: var(--space-4xl) 0 var(--space-2xl) 0; border-bottom: 1px solid var(--border-subtle); background: var(--bg-surface);">
+      <div class="container text-center">
+        <div class="badge-pill">Capabilities & Deliverables</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 16px;">
+          Bespoke Disciplines For <span class="text-gold">Complete Elevation</span>
+        </h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Every stage of our redesign process is calibrated to protect your existing brand equity while infusing modern elegance, responsive precision, and actionable design handovers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Detailed Pillars -->
+    <section style="padding: var(--space-5xl) 0;">
+      <div class="container">
+        <div class="services-grid" style="margin-bottom: var(--space-4xl);">
+          <div class="service-card">
+            <span class="service-number">01 / ARCHITECTURE</span>
+            <h3 class="service-title">Visual & UX Refresh</h3>
+            <p class="service-desc">
+              Comprehensive aesthetic reimagination across all pages. We retain your established URL hierarchy and navigation logic so your existing SEO rankings remain protected.
+            </p>
+            <ul class="service-deliverables">
+              <li>Refined typography hierarchy (Cormorant & Sans)</li>
+              <li>Atmospheric obsidian and gold palette tokens</li>
+              <li>Intentional 8pt grid editorial whitespace</li>
+              <li>Micro-interactions with zero visual clutter</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline btn-sm">Inquire &rarr;</a>
+          </div>
+
+          <div class="service-card" style="border-color: var(--gold-border);">
+            <div class="badge-pill" style="margin-bottom:12px;">Core Deliverable</div>
+            <span class="service-number">02 / FIDELITY</span>
+            <h3 class="service-title">Responsive Engineering</h3>
+            <p class="service-desc">
+              Pixel-perfect fluidity across Desktop (1440px+), Laptop (1200px), Tablet (768px), and Mobile (375px/390px). Tested under authentic touch conditions.
+            </p>
+            <ul class="service-deliverables">
+              <li>Responsive typography scaling (clamp logic)</li>
+              <li>Off-canvas mobile navigation drawer</li>
+              <li>Adaptive card grids & high-density imagery</li>
+              <li>Touch-optimized button tap targets (&ge; 44px)</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary btn-sm">Inquire &rarr;</a>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">03 / HANDOVER</span>
+            <h3 class="service-title">Figma / XD System & Guide</h3>
+            <p class="service-desc">
+              Organized design files with clearly labelled components, auto-layout constraints, color & typography styles, and a concise developer handover document.
+            </p>
+            <ul class="service-deliverables">
+              <li>Figma & Adobe XD component library</li>
+              <li>Documented spacing, colors, and font rules</li>
+              <li>State variants (Default, Hover, Active, Disabled)</li>
+              <li>Ready for seamless in-house engineering handoff</li>
+            </ul>
+            <a href="design-system.html" class="btn btn-outline btn-sm">View System &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Comprehensive Deliverables Comparison Table -->
+        <div class="section-header" style="margin-top: var(--space-5xl);">
+          <div class="badge-pill">Package Comparison</div>
+          <h2 class="section-title">Transparent Scope & <span class="text-gold">Milestone Delivery</span></h2>
+          <p class="section-desc">Choose the depth of elevation that matches your brand’s current growth phase.</p>
+        </div>
+
+        <div style="background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; min-width:680px; text-align:left;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-medium); background:rgba(255,255,255,0.02);">
+                <th style="padding:var(--space-lg); font-family:var(--font-display);">Deliverable Feature</th>
+                <th style="padding:var(--space-lg); font-family:var(--font-display); text-align:center;">Core Redesign</th>
+                <th style="padding:var(--space-lg); font-family:var(--font-display); text-align:center; color:var(--gold-primary);">Flagship Elevation</th>
+                <th style="padding:var(--space-lg); font-family:var(--font-display); text-align:center;">Enterprise Atelier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);">
+                <td style="padding:var(--space-md) var(--space-lg); font-weight:600;">Pages Redesigned</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center;">Homepage + 4 Deep Pages</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--gold-primary); font-weight:700;">Full Site (Up to 12 Pages)</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center;">Unlimited Pages & Portals</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);">
+                <td style="padding:var(--space-md) var(--space-lg); font-weight:600;">Responsive Layouts (Desktop/Tablet/Mobile)</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Included</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success); font-weight:700;">✓ Pixel-Perfect</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Advanced Breakpoints</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);">
+                <td style="padding:var(--space-md) var(--space-lg); font-weight:600;">Organized Figma / Adobe XD Files</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Base Frames</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success); font-weight:700;">✓ Component Library</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Complete Token System</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);">
+                <td style="padding:var(--space-md) var(--space-lg); font-weight:600;">Concise Handover Guide (Specs & Tokens)</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ PDF Guide</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success); font-weight:700;">✓ PDF + Interactive Web</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Full Token Repository</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);">
+                <td style="padding:var(--space-md) var(--space-lg); font-weight:600;">Working HTML / CSS / JS & PHP Code</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--text-muted);">&mdash; Optional</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success); font-weight:700;">✓ Included</td>
+                <td style="padding:var(--space-md) var(--space-lg); text-align:center; color:var(--success);">✓ Full Custom Deployment</td>
+              </tr>
+              <tr>
+                <td style="padding:var(--space-lg); font-weight:600;">Estimated Turnaround</td>
+                <td style="padding:var(--space-lg); text-align:center; font-family:var(--font-mono);">2 - 3 Weeks</td>
+                <td style="padding:var(--space-lg); text-align:center; font-family:var(--font-mono); color:var(--gold-primary); font-weight:700;">3 - 4 Weeks</td>
+                <td style="padding:var(--space-lg); text-align:center; font-family:var(--font-mono);">5 - 6 Weeks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-3xl);">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request Custom Proposal For Your Site &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="design-system.html" style="color:var(--text-muted); text-decoration:none;">Design Specs</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Request Proposal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

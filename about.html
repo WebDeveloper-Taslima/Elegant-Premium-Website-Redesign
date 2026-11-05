@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Heritage — VANGUARD ATELIER</title>
+  <meta name="description" content="Our design heritage, architectural philosophy, and leadership team dedicated to transforming brands into digital icons.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Vanguard Atelier Redesign &bull; About Heritage Page
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <a href="design-system.html" class="viewport-btn" style="color:var(--gold-primary); text-decoration:none;">Handover Specs</a>
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Overview</a></li>
+              <li class="nav-item active"><a href="about.html">Heritage</a></li>
+              <li class="nav-item"><a href="services.html">Capabilities</a></li>
+              <li class="nav-item"><a href="portfolio.html">Showcase</a></li>
+              <li class="nav-item"><a href="design-system.html">Design System</a></li>
+              <li class="nav-item"><a href="contact.html">Private Booking</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="about.html">Heritage</a></li>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="portfolio.html">Showcase</a></li>
+          <li><a href="design-system.html">Design System</a></li>
+          <li><a href="contact.html">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section style="padding: var(--space-4xl) 0 var(--space-2xl) 0; border-bottom: 1px solid var(--border-subtle); background: var(--bg-surface);">
+      <div class="container text-center">
+        <div class="badge-pill">Heritage & Philosophy</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 16px;">
+          Crafting Digital Monuments with <span class="text-gold">Quiet Authority</span>
+        </h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Founded on the conviction that a digital presence should reflect the same caliber of craftsmanship, poise, and sophistication as a bespoke physical atelier.
+        </p>
+      </div>
+    </section>
+
+    <!-- Heritage Story Grid -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <blockquote class="about-quote">
+              "We don't merely redesign websites; we curate the visual language that defines our clients' market authority for decades."
+            </blockquote>
+            <p class="about-body-text">
+              When a website becomes dated, the loss isn't just aesthetic—it creates subtle skepticism in the minds of discerning clientele. High-net-worth customers, enterprise buyers, and luxury patrons make subconscious decisions within 50 milliseconds of landing on your page.
+            </p>
+            <p class="about-body-text">
+              By aligning your digital experience with timeless typography, intentional whitespace, and responsive tactile interactions, we transform skepticism into immediate reverence.
+            </p>
+          </div>
+          <div class="about-image-collage">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Design Strategy Session" class="about-primary-img">
+            <div class="about-badge-card">
+              <strong style="color:var(--gold-primary); font-size:1.2rem; display:block;">Guaranteed Quality</strong>
+              <span style="font-size:0.8rem; color:var(--text-secondary);">Tested Across 40+ Device Profiles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership / Design Directors -->
+    <section style="padding: var(--space-5xl) 0; background: var(--bg-primary);">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">Creative Direction</div>
+          <h2 class="section-title">The Curators Behind the <span class="text-gold">Transformation</span></h2>
+          <p class="section-desc">Senior architects combining classical Swiss graphic design principles with cutting-edge front-end engineering.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-xl);">
+          <div class="service-card" style="padding: var(--space-lg);">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" 
+                 alt="Elena Rostova" style="width:100%; height:280px; object-fit:cover; border-radius:var(--radius-md); margin-bottom:16px;">
+            <div class="badge-pill" style="font-size:0.7rem; margin-bottom:8px;">Principal Creative Director</div>
+            <h3 style="font-size:1.35rem; margin-bottom:4px;">Elena Rostova</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;">
+              Former Lead Designer at Zurich Brand House, specializing in luxury fashion typography and haute couture digital showrooms.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding: var(--space-lg);">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" 
+                 alt="Marcus Vance" style="width:100%; height:280px; object-fit:cover; border-radius:var(--radius-md); margin-bottom:16px;">
+            <div class="badge-pill" style="font-size:0.7rem; margin-bottom:8px;">Executive UX Architect</div>
+            <h3 style="font-size:1.35rem; margin-bottom:4px;">Marcus Vance</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;">
+              14+ years pioneering frictionless checkout architectures and ultra-responsive enterprise interfaces across Silicon Valley and London.
+            </p>
+          </div>
+
+          <div class="service-card" style="padding: var(--space-lg);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" 
+                 alt="Sophia Chen" style="width:100%; height:280px; object-fit:cover; border-radius:var(--radius-md); margin-bottom:16px;">
+            <div class="badge-pill" style="font-size:0.7rem; margin-bottom:8px;">Head of Systems & Handover</div>
+            <h3 style="font-size:1.35rem; margin-bottom:4px;">Sophia Chen</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.6;">
+              Master of Design Systems, auto-layout component governance, and seamless developer handoff for Figma and PHP architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline of Milestones -->
+    <section style="padding: var(--space-5xl) 0; background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <div class="badge-pill">Evolution</div>
+          <h2 class="section-title">Milestones of <span class="text-gold">Digital Excellence</span></h2>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap: var(--space-2xl); border-left: 2px solid var(--gold-border); padding-left: var(--space-2xl); margin-left: 16px;">
+          <div>
+            <span style="font-family:var(--font-mono); color:var(--gold-primary); font-weight:700;">2018 &bull; INCEPTION</span>
+            <h3 style="font-size:1.4rem; margin: 4px 0 8px 0;">The Pure Typography Manifesto</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Founded to counter generic web templates by introducing Swiss editorial grid structures to high-end digital platforms.</p>
+          </div>
+          <div>
+            <span style="font-family:var(--font-mono); color:var(--gold-primary); font-weight:700;">2021 &bull; GLOBAL ACCLAIM</span>
+            <h3 style="font-size:1.4rem; margin: 4px 0 8px 0;">Private Wealth & Luxury Commerce Expansion</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Successfully redesigned flagship web platforms for Swiss horlogerie brands and transatlantic wealth managers.</p>
+          </div>
+          <div>
+            <span style="font-family:var(--font-mono); color:var(--gold-primary); font-weight:700;">2024 &bull; DESIGN SYSTEM ENGINE</span>
+            <h3 style="font-size:1.4rem; margin: 4px 0 8px 0;">Tokenized Component Framework</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Launched our standardized Figma/XD handover methodology, allowing client development teams to implement redesigns without friction.</p>
+          </div>
+          <div>
+            <span style="font-family:var(--font-mono); color:var(--gold-primary); font-weight:700;">2026 &bull; CONTEMPORARY HORIZON</span>
+            <h3 style="font-size:1.4rem; margin: 4px 0 8px 0;">Sub-Second Micro-Interactions</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Pioneering buttery-smooth 60fps micro-animations, adaptive light/dark luxury palettes, and fluid multi-device layouts.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-4xl);">
+          <a href="contact.html" class="btn btn-primary btn-lg">Transform Your Website With Us &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="design-system.html" style="color:var(--text-muted); text-decoration:none;">Design Specs</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Request Proposal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

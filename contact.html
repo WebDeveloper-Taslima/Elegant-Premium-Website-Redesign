@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Consultation & Booking — VANGUARD ATELIER</title>
+  <meta name="description" content="Initiate your bespoke website redesign consultation. Submit your existing website URLs and project requirements.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Vanguard Atelier Redesign &bull; Private Consultation Booking
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <a href="design-system.html" class="viewport-btn" style="color:var(--gold-primary); text-decoration:none;">Handover Specs</a>
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Overview</a></li>
+              <li class="nav-item"><a href="about.html">Heritage</a></li>
+              <li class="nav-item"><a href="services.html">Capabilities</a></li>
+              <li class="nav-item"><a href="portfolio.html">Showcase</a></li>
+              <li class="nav-item"><a href="design-system.html">Design System</a></li>
+              <li class="nav-item active"><a href="contact.html">Private Booking</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="about.html">Heritage</a></li>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="portfolio.html">Showcase</a></li>
+          <li><a href="design-system.html">Design System</a></li>
+          <li><a href="contact.html">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section style="padding: var(--space-4xl) 0 var(--space-2xl) 0; border-bottom: 1px solid var(--border-subtle); background: var(--bg-surface);">
+      <div class="container text-center">
+        <div class="badge-pill">Confidential Inquiry</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 16px;">
+          Initiate Your <span class="text-gold">Brand Elevation</span>
+        </h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Submit your existing website URLs, brand assets, and target milestones. Our principal creative directors will review your brief within 4 business hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- Consultation Wizard & Contact Grid -->
+    <section class="consultation-section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.35fr 0.85fr; gap: var(--space-3xl); align-items: start;">
+          
+          <!-- Interactive Wizard -->
+          <div class="booking-wizard-card">
+            <div class="wizard-steps-indicator">
+              <div class="step-node active" data-step="1">01</div>
+              <div class="step-node" data-step="2">02</div>
+              <div class="step-node" data-step="3">03</div>
+            </div>
+
+            <form id="consultation-form">
+              <!-- Step 1 -->
+              <div id="step-pane-1" class="wizard-step-pane active">
+                <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 1: Select Redesign Scope</h3>
+                <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                  Which aspects of your existing platform need elevation?
+                </p>
+
+                <div class="radio-cards-grid" style="margin-bottom: var(--space-xl);">
+                  <div class="radio-card selected" data-value="full-redesign">
+                    <div style="font-size: 1.5rem; margin-bottom: 6px;">🏛️</div>
+                    <strong style="display:block; margin-bottom:4px;">Full Website Redesign</strong>
+                    <span style="font-size: 0.75rem; color:var(--text-muted);">Homepage to all deep pages</span>
+                  </div>
+                  <div class="radio-card" data-value="design-system">
+                    <div style="font-size: 1.5rem; margin-bottom: 6px;">📐</div>
+                    <strong style="display:block; margin-bottom:4px;">Figma/XD System & Guide</strong>
+                    <span style="font-size: 0.75rem; color:var(--text-muted);">Organized components & tokens</span>
+                  </div>
+                  <div class="radio-card" data-value="php-html">
+                    <div style="font-size: 1.5rem; margin-bottom: 6px;">⚡</div>
+                    <strong style="display:block; margin-bottom:4px;">PHP / Web Development</strong>
+                    <span style="font-size: 0.75rem; color:var(--text-muted);">Responsive code & deployment</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="existing-url">Current Website URL(s)</label>
+                  <input type="url" id="existing-url" class="form-control" placeholder="https://yourbrand.com" required>
+                </div>
+
+                <div class="wizard-nav-buttons" style="justify-content: flex-end;">
+                  <button type="button" class="btn btn-primary btn-wizard-next">Continue to Timeline &rarr;</button>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div id="step-pane-2" class="wizard-step-pane">
+                <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 2: Investment & Target Launch</h3>
+                <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                  Help us align with your operational milestones.
+                </p>
+
+                <div class="form-group">
+                  <label class="form-label">Estimated Project Investment</label>
+                  <div class="radio-cards-grid">
+                    <div class="radio-card selected">
+                      <strong>$3,500 - $7,500</strong>
+                      <div style="font-size:0.75rem; color:var(--text-muted);">Curated Refresh</div>
+                    </div>
+                    <div class="radio-card">
+                      <strong>$7,500 - $18,000</strong>
+                      <div style="font-size:0.75rem; color:var(--text-muted);">Flagship Overhaul</div>
+                    </div>
+                    <div class="radio-card">
+                      <strong>$18,000+</strong>
+                      <div style="font-size:0.75rem; color:var(--text-muted);">Enterprise Atelier</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="target-timeline">Desired Completion Date</label>
+                  <select id="target-timeline" class="form-control">
+                    <option>Immediate (Within 2 - 3 Weeks)</option>
+                    <option selected>Standard (Within 4 - 6 Weeks)</option>
+                    <option>Flexible / Quality-First</option>
+                  </select>
+                </div>
+
+                <div class="wizard-nav-buttons">
+                  <button type="button" class="btn btn-secondary btn-wizard-prev">&larr; Back</button>
+                  <button type="button" class="btn btn-primary btn-wizard-next">Continue to Details &rarr;</button>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div id="step-pane-3" class="wizard-step-pane">
+                <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 3: Executive Details & Vision</h3>
+                <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                  We treat every consultation under strict non-disclosure.
+                </p>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md);">
+                  <div>
+                    <label class="form-label" for="client-name">Your Full Name</label>
+                    <input type="text" id="client-name" class="form-control" placeholder="e.g. Julian Vance" required>
+                  </div>
+                  <div>
+                    <label class="form-label" for="client-email">Executive Email</label>
+                    <input type="email" id="client-email" class="form-control" placeholder="julian@enterprise.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="project-vision">Key Pain Points with Current Website</label>
+                  <textarea id="project-vision" class="form-control" rows="4" placeholder="Mention any specific pages, aesthetic preferences, typography ideas, or existing assets to retain..." required></textarea>
+                </div>
+
+                <div class="wizard-nav-buttons">
+                  <button type="button" class="btn btn-secondary btn-wizard-prev">&larr; Back</button>
+                  <button type="submit" class="btn btn-primary">Transmit Brief & Book Consultation ✦</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Studio Coordinates & Guarantees -->
+          <div>
+            <div class="feature-box" style="margin-bottom: var(--space-xl); background: var(--bg-card);">
+              <h3 style="font-family:var(--font-display); font-size:1.2rem; margin-bottom:12px; color:var(--gold-primary);">
+                Executive Inquiries Direct
+              </h3>
+              <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; margin-bottom:16px;">
+                Prefer direct communication? Send your website URLs and creative brief directly to our managing partner.
+              </p>
+              <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-primary); margin-bottom:8px;">
+                ✉ contact@vanguard-atelier.design
+              </div>
+              <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-primary);">
+                ☎ +1 (212) 555-0198
+              </div>
+            </div>
+
+            <div class="feature-box" style="background: var(--bg-card);">
+              <h3 style="font-family:var(--font-display); font-size:1.2rem; margin-bottom:12px; color:var(--gold-primary);">
+                Guaranteed Commitments
+              </h3>
+              <ul class="service-deliverables" style="margin-bottom:0;">
+                <li>Strict Mutual Non-Disclosure Agreement (NDA)</li>
+                <li>Zero disruption to your live website during design</li>
+                <li>Figma / Adobe XD complete files with full ownership</li>
+                <li>Clear handover specifications and component guidelines</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="design-system.html" style="color:var(--text-muted); text-decoration:none;">Design Specs</a>
+            <a href="index.html" style="color:var(--gold-primary); text-decoration:none;">Back to Overview</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

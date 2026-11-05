@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated Portfolio & Selected Works — VANGUARD ATELIER</title>
+  <meta name="description" content="Explore our portfolio of high-end website redesigns across luxury fashion, Swiss horlogerie, private wealth, and contemporary architecture.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Preview Simulator Bar -->
+  <div class="preview-control-bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Vanguard Atelier Redesign &bull; Portfolio Showcase
+      </span>
+      <div class="preview-viewports">
+        <button class="viewport-btn active" data-viewport="desktop">Desktop</button>
+        <button class="viewport-btn" data-viewport="tablet">Tablet (768px)</button>
+        <button class="viewport-btn" data-viewport="mobile">Mobile (390px)</button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <a href="design-system.html" class="viewport-btn" style="color:var(--gold-primary); text-decoration:none;">Handover Specs</a>
+      <button id="theme-toggle-btn" class="theme-toggle-btn"><span>🌙</span> Dark Obsidian</button>
+    </div>
+  </div>
+
+  <div id="viewport-stage">
+    <!-- Navigation -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html">Overview</a></li>
+              <li class="nav-item"><a href="about.html">Heritage</a></li>
+              <li class="nav-item"><a href="services.html">Capabilities</a></li>
+              <li class="nav-item active"><a href="portfolio.html">Showcase</a></li>
+              <li class="nav-item"><a href="design-system.html">Design System</a></li>
+              <li class="nav-item"><a href="contact.html">Private Booking</a></li>
+            </ul>
+          </nav>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="about.html">Heritage</a></li>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="portfolio.html">Showcase</a></li>
+          <li><a href="design-system.html">Design System</a></li>
+          <li><a href="contact.html">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section style="padding: var(--space-4xl) 0 var(--space-2xl) 0; border-bottom: 1px solid var(--border-subtle); background: var(--bg-surface);">
+      <div class="container text-center">
+        <div class="badge-pill">Selected Monograph</div>
+        <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 16px;">
+          Case Studies in <span class="text-gold">Brand Transformation</span>
+        </h1>
+        <p class="section-desc" style="max-width: 720px; margin: 0 auto;">
+          Click any project below to inspect the challenges, architectural solutions, and design handover assets delivered.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <div class="container">
+        <!-- Filter Navigation -->
+        <div class="portfolio-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="horlogerie">Haute Horlogerie</button>
+          <button class="filter-btn" data-filter="wealth">Private Wealth</button>
+          <button class="filter-btn" data-filter="architecture">Architecture</button>
+          <button class="filter-btn" data-filter="fashion">Luxury Fashion</button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-card" data-category="horlogerie" data-id="1">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Maison de Haute Horlogerie Redesign">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Haute Horlogerie &bull; Swiss Heritage</div>
+              <h3 class="portfolio-project-title">Maison de Haute Horlogerie</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +340% Private Viewing Inquiries &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="portfolio-card" data-category="wealth" data-id="2">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Aura Private Wealth Management Portal">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Fintech &bull; Executive Advisory</div>
+              <h3 class="portfolio-project-title">Aura Private Wealth Management</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> $120M+ Capital Onboarded &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-card" data-category="architecture" data-id="3">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Sovereign Architectural Studio Web Monograph">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Architecture &bull; Spatial Living</div>
+              <h3 class="portfolio-project-title">Sovereign Architectural Studio</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +215% International Project Briefs &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="portfolio-card" data-category="fashion" data-id="4">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Kaelen Bespoke Cashmere E-Commerce">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Luxury Fashion &bull; Direct-to-Consumer</div>
+              <h3 class="portfolio-project-title">Kaelen Bespoke Cashmere</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +82% Average Order Value &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-4xl);">
+          <div class="badge-pill">Your Brand is Next</div>
+          <h2 style="font-size: 2rem; margin-bottom: 16px;">Ready to Elevate Your Website?</h2>
+          <a href="contact.html" class="btn btn-primary btn-lg">Submit Your URL For Review &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="design-system.html" style="color:var(--text-muted); text-decoration:none;">Design Specs</a>
+            <a href="contact.html" style="color:var(--gold-primary); text-decoration:none;">Request Proposal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="case-study-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close-btn">&times;</button>
+      <img id="modal-img" src="" alt="Case Study Hero" class="modal-hero-img">
+      <div class="modal-content-body">
+        <div id="modal-category" class="badge-pill" style="margin-bottom: 8px;">Category</div>
+        <h2 id="modal-title" style="font-size: 2.2rem; margin-bottom: 8px;">Case Study Title</h2>
+        <div id="modal-impact" style="font-size: 1rem; color: var(--gold-primary); font-weight: 600; margin-bottom: var(--space-lg);">
+          Impact Metric
+        </div>
+        <p id="modal-desc" style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: var(--space-xl);">
+          Case study overview text...
+        </p>
+
+        <h4 style="font-family:var(--font-display); font-size: 1.1rem; margin-bottom: 12px;">Deliverables Provided:</h4>
+        <ul id="modal-deliverables" class="service-deliverables" style="margin-bottom: var(--space-xl);">
+        </ul>
+
+        <div style="display:flex; justify-content:flex-end;">
+          <a href="contact.html" class="btn btn-primary">
+            Inquire About Similar Redesign &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANGUARD ATELIER — Elegant Premium Website Redesign & Brand Architecture</title>
+  <meta name="description" content="A modern, polished, and premium digital experience redesign. Refined typography, cohesive colour palette, elegant spacing, and smooth micro-interactions.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PERSISTENT PREVIEW SIMULATOR TOOLBAR
+       ========================================================================== -->
+  <div class="preview-control-bar" role="toolbar" aria-label="Interactive Preview Bar">
+    <div class="preview-bar-left">
+      <span class="preview-tag">
+        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+        Live Interactive Redesign Prototype
+      </span>
+      <div class="preview-viewports" aria-label="Viewport Switcher">
+        <button class="viewport-btn active" data-viewport="desktop" title="Preview Desktop Mode">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          Desktop
+        </button>
+        <button class="viewport-btn" data-viewport="tablet" title="Preview Tablet Mode (768px)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Tablet (768px)
+        </button>
+        <button class="viewport-btn" data-viewport="mobile" title="Preview Mobile Mode (390px)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Mobile (390px)
+        </button>
+      </div>
+    </div>
+    <div class="preview-bar-right">
+      <a href="#handover-guide" class="viewport-btn" style="color:var(--gold-primary); text-decoration:none;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Handover Specs
+      </a>
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <span>🌙</span> Dark Obsidian
+      </button>
+    </div>
+  </div>
+
+  <!-- Stage Container for Viewport Simulation -->
+  <div id="viewport-stage">
+
+    <!-- ==========================================================================
+         PRIMARY NAVIGATION BAR
+         ========================================================================== -->
+    <header class="site-nav">
+      <div class="container container-wide">
+        <div class="nav-wrapper">
+          <a href="#hero" class="brand-logo" aria-label="Vanguard Atelier Home">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </a>
+
+          <nav>
+            <ul class="nav-links">
+              <li class="nav-item active"><a href="#hero">Overview</a></li>
+              <li class="nav-item"><a href="#transformation">Before & After</a></li>
+              <li class="nav-item"><a href="#services">Capabilities</a></li>
+              <li class="nav-item"><a href="#portfolio">Showcase</a></li>
+              <li class="nav-item"><a href="#about">Heritage</a></li>
+              <li class="nav-item"><a href="#handover-guide">Design System</a></li>
+              <li class="nav-item"><a href="#consultation">Private Booking</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <a href="#consultation" class="btn btn-primary btn-sm">Request Redesign</a>
+            <button id="nav-hamburger-btn" class="nav-hamburger" aria-label="Open Navigation Menu">☰</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <aside class="mobile-menu-drawer" aria-label="Mobile Navigation">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="brand-emblem">V</div>
+            <div class="brand-text-block">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-sub">Atelier &bull; Digital</span>
+            </div>
+          </div>
+          <button id="mobile-drawer-close" class="mobile-close-btn" aria-label="Close Menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#hero">Overview</a></li>
+          <li><a href="#transformation">Before & After</a></li>
+          <li><a href="#services">Capabilities</a></li>
+          <li><a href="#portfolio">Showcase</a></li>
+          <li><a href="#about">Heritage</a></li>
+          <li><a href="#handover-guide">Design System</a></li>
+          <li><a href="#consultation">Private Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="#consultation" class="btn btn-primary" style="width: 100%; text-align: center;">Book Consultation</a>
+      </div>
+    </aside>
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text-block">
+            <div class="badge-pill">Bespoke Digital Elevation</div>
+            <h1 class="hero-tagline">
+              Elevating Brands Into <span class="text-gold italic">Timeless</span> Digital Icons
+            </h1>
+            <p class="hero-description">
+              A comprehensive visual and UX transformation crafted for high-end enterprises. We replace dated layouts with refined typography, cohesive champagne & obsidian palettes, breathing whitespace, and buttery-smooth micro-interactions.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#consultation" class="btn btn-primary btn-lg">
+                Explore Full Concept
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#transformation" class="btn btn-secondary btn-lg">
+                View Before & After
+              </a>
+            </div>
+
+            <!-- Key Proof Points Row -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <div class="stat-item-number text-gold">99.4%</div>
+                <div class="stat-item-label">Client Retention</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-item-number">$420M+</div>
+                <div class="stat-item-label">Client Market Cap</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-item-number">100%</div>
+                <div class="stat-item-label">Responsive Fidelity</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Art Showcase -->
+          <div class="hero-visual-card">
+            <div class="hero-image-frame">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Modern Architectural Interior - Luxury Digital Aesthetics" loading="eager">
+            </div>
+            <div class="hero-floating-badge">
+              <div class="floating-badge-icon">💎</div>
+              <div class="floating-badge-title">Precision Visuals</div>
+              <div class="floating-badge-meta">Zero clutter. Maximum authority. 60fps micro-animations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MARQUEE / PARTNERS & ENDORSEMENTS
+         ========================================================================== -->
+    <section class="marquee-section">
+      <div class="marquee-heading">Trusted by Discerning Founders, Luxury Houses & Global Institutions</div>
+      <div class="marquee-track">
+        <div class="marquee-item"><span>✦</span> VOGUE LUXE</div>
+        <div class="marquee-item"><span>✦</span> SOTHEBY'S DIGITAL</div>
+        <div class="marquee-item"><span>✦</span> APEX CAPITAL</div>
+        <div class="marquee-item"><span>✦</span> MAISON ARCHITECTURE</div>
+        <div class="marquee-item"><span>✦</span> LUMINA WEALTH</div>
+        <div class="marquee-item"><span>✦</span> KRONOS HORLOGERIE</div>
+        <!-- Duplicate for infinite seamless marquee loop -->
+        <div class="marquee-item"><span>✦</span> VOGUE LUXE</div>
+        <div class="marquee-item"><span>✦</span> SOTHEBY'S DIGITAL</div>
+        <div class="marquee-item"><span>✦</span> APEX CAPITAL</div>
+        <div class="marquee-item"><span>✦</span> MAISON ARCHITECTURE</div>
+        <div class="marquee-item"><span>✦</span> LUMINA WEALTH</div>
+        <div class="marquee-item"><span>✦</span> KRONOS HORLOGERIE</div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BEFORE & AFTER INTERACTIVE SPLIT SLIDER SECTION
+         ========================================================================== -->
+    <section id="transformation" class="transformation-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">The Transformation</div>
+          <h2 class="section-title">From Dated & Cluttered to <span class="text-gold">Sleek & Prestigious</span></h2>
+          <p class="section-desc">
+            Drag the interactive slider below to witness how our redesign elevates standard, fatigued digital structures into captivating editorial masterpieces that command respect and convert high-ticket clients.
+          </p>
+        </div>
+
+        <div class="comparison-card">
+          <!-- Interactive Slider -->
+          <div id="comparison-slider" class="slider-container" title="Drag to compare before and after">
+            <!-- Background Layer: Dated / Before -->
+            <div class="slider-img slider-img-before">
+              <span class="badge-tag-before">Before: Dated & Fatigued</span>
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Before Redesign - Conventional Cluttered Interface">
+            </div>
+
+            <!-- Foreground Layer: Elevated / After -->
+            <div id="slider-after-layer" class="slider-img-after">
+              <span class="badge-tag-after">After: Modern Premium Redesign</span>
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+                   alt="After Redesign - Elevated Luxury Interface">
+            </div>
+
+            <!-- Draggable Gold Handle -->
+            <div id="slider-handle" class="slider-handle" aria-hidden="true">
+              ↔
+            </div>
+          </div>
+
+          <!-- Key Transformation Metrics -->
+          <div class="comparison-features-grid">
+            <div class="feature-box">
+              <div class="feature-box-icon">Aa</div>
+              <h3 class="feature-box-title">Refined Typography Scale</h3>
+              <p class="feature-box-desc">
+                Replaced generic sans fonts with high-contrast editorial serifs (Cormorant Garamond) paired with geometric sans for maximum readability and prestige.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🎨</div>
+              <h3 class="feature-box-title">Cohesive Gold & Slate Palette</h3>
+              <p class="feature-box-desc">
+                Eliminated noisy, fragmented color choices. Unified under deep Obsidian Onyx, brushed champagne gold accents, and warm alabaster lighting.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">📐</div>
+              <h3 class="feature-box-title">8-Point Grid Spacing</h3>
+              <p class="feature-box-desc">
+                Generous editorial whitespace that allows content to breathe, guiding the user’s eye naturally down the conversion funnel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES & CAPABILITIES MATRIX
+         ========================================================================== -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">Bespoke Offerings</div>
+          <h2 class="section-title">Engineered For <span class="text-gold">Brand Supremacy</span></h2>
+          <p class="section-desc">
+            Every deliverable in this redesign is tailored to eliminate friction, elevate aesthetic authority, and guarantee seamless cross-device performance.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div>
+              <span class="service-number">01 / BRAND VISUAL ARCHITECTURE</span>
+              <h3 class="service-title">Holistic UI/UX Transformation</h3>
+              <p class="service-desc">
+                Reimagining your core pages from the ground up while retaining your established structure, ensuring existing SEO and URL equity remain intact.
+              </p>
+              <ul class="service-deliverables">
+                <li>Art-directed visual identity overhaul</li>
+                <li>UX flow optimization & wireframes</li>
+                <li>Frictionless conversion touchpoints</li>
+                <li>Custom micro-interactions & feedback</li>
+              </ul>
+            </div>
+            <a href="#consultation" class="btn btn-outline btn-sm">Select Scope</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card" style="border-color: var(--gold-border);">
+            <div>
+              <div style="display:inline-block; margin-bottom:12px;" class="badge-pill">Recommended</div><br>
+              <span class="service-number">02 / MULTI-DEVICE RESPONSIVENESS</span>
+              <h3 class="service-title">Desktop, Tablet & Mobile Fluidity</h3>
+              <p class="service-desc">
+                Precision responsiveness tested across 1440px desktop displays, iPads, and iOS/Android smartphones. Zero awkward layout shifts or truncated copy.
+              </p>
+              <ul class="service-deliverables">
+                <li>Fluid typography & dynamic viewports</li>
+                <li>Touch-optimized gesture menus</li>
+                <li>Sub-second image loading & WebP assets</li>
+                <li>Pixel-perfect alignment across breakpoints</li>
+              </ul>
+            </div>
+            <a href="#consultation" class="btn btn-primary btn-sm">Select Scope</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div>
+              <span class="service-number">03 / DESIGN SYSTEM & HANDOVER</span>
+              <h3 class="service-title">Organized Design Files & Guide</h3>
+              <p class="service-desc">
+                Production-ready Figma & Adobe XD component libraries with auto-layout, documented design tokens, typography scales, and a comprehensive handover guide.
+              </p>
+              <ul class="service-deliverables">
+                <li>Figma / XD components & variant states</li>
+                <li>Complete design token export (CSS/JSON)</li>
+                <li>Styleguide documentation manual</li>
+                <li>Clean PHP & HTML/CSS integration guide</li>
+              </ul>
+            </div>
+            <a href="#consultation" class="btn btn-outline btn-sm">Select Scope</a>
+          </div>
+        </div>
+
+        <!-- Interactive Scope & Turnaround Estimator -->
+        <div class="scope-calculator-wrapper">
+          <div class="calculator-header">
+            <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Interactive Scope & Delivery Estimator</h3>
+            <p class="text-secondary" style="font-size: 0.9rem;">Select your desired redesign depth to inspect deliverables and turnaround times</p>
+          </div>
+
+          <div class="calc-options-grid">
+            <div class="calc-pill-label" data-tier="standard">
+              <span class="calc-pill-title">Core Refresh</span>
+              <span class="calc-pill-sub">Homepage + 4 Key Pages</span>
+            </div>
+            <div class="calc-pill-label active" data-tier="flagship">
+              <span class="calc-pill-title">Flagship Redesign</span>
+              <span class="calc-pill-sub">Full Site + Figma System + Mobile</span>
+            </div>
+            <div class="calc-pill-label" data-tier="bespoke">
+              <span class="calc-pill-title">Bespoke Atelier</span>
+              <span class="calc-pill-sub">Full Redesign + PHP Code + Handover</span>
+            </div>
+          </div>
+
+          <div class="calc-result-bar">
+            <div class="calc-result-metrics">
+              <div class="calc-metric-block">
+                <span id="calc-timeline-label">Turnaround</span>
+                <strong id="calc-timeline">4 - 5 Weeks</strong>
+              </div>
+              <div class="calc-metric-block">
+                <span>Deliverables Included</span>
+                <strong id="calc-deliverables">Complete Redesign + Design System + Motion</strong>
+              </div>
+              <div class="calc-metric-block">
+                <span>Projected Conversion Lift</span>
+                <strong id="calc-lift">+320% Conversion</strong>
+              </div>
+            </div>
+            <a href="#consultation" class="btn btn-primary btn-sm">Confirm Scope</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PORTFOLIO & SELECTED SHOWCASES
+         ========================================================================== -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">Curated Works</div>
+          <h2 class="section-title">Proven Excellence in <span class="text-gold">Luxury Digital Craft</span></h2>
+          <p class="section-desc">
+            Explore recent digital revamps engineered for high-net-worth brands, private ateliers, and forward-thinking enterprises.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="portfolio-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="horlogerie">Haute Horlogerie</button>
+          <button class="filter-btn" data-filter="wealth">Private Wealth</button>
+          <button class="filter-btn" data-filter="architecture">Architecture</button>
+          <button class="filter-btn" data-filter="fashion">Luxury Fashion</button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-card" data-category="horlogerie" data-id="1">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Maison de Haute Horlogerie Redesign">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Haute Horlogerie &bull; Swiss Heritage</div>
+              <h3 class="portfolio-project-title">Maison de Haute Horlogerie</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +340% Private Viewing Inquiries &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="portfolio-card" data-category="wealth" data-id="2">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Aura Private Wealth Management Portal">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Fintech &bull; Executive Advisory</div>
+              <h3 class="portfolio-project-title">Aura Private Wealth Management</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> $120M+ Capital Onboarded &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-card" data-category="architecture" data-id="3">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Sovereign Architectural Studio Web Monograph">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Architecture &bull; Spatial Living</div>
+              <h3 class="portfolio-project-title">Sovereign Architectural Studio</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +215% International Project Briefs &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="portfolio-card" data-category="fashion" data-id="4">
+            <div class="portfolio-thumb-wrapper">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop" 
+                   alt="Kaelen Bespoke Cashmere E-Commerce">
+              <div class="portfolio-overlay"></div>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-category-tag">Luxury Fashion &bull; Direct-to-Consumer</div>
+              <h3 class="portfolio-project-title">Kaelen Bespoke Cashmere</h3>
+              <div class="portfolio-stat-metric">
+                <span style="color:var(--gold-primary);">★</span> +82% Average Order Value &bull; Click to View Case Study
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHILOSOPHY & BRAND HERITAGE
+         ========================================================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <div class="badge-pill">Design Philosophy</div>
+            <blockquote class="about-quote">
+              "True luxury is not about adding elements until nothing more can be fit; it is about refining until nothing more can be removed."
+            </blockquote>
+            <p class="about-body-text">
+              Many corporate websites suffer from visual bloat: excessive popups, disjointed typography scales, mismatched color palettes, and clumsy mobile layouts. Our methodology strips away the superfluous, replacing it with editorial precision, cohesive branding, and intuitive micro-interactions that communicate quiet confidence.
+            </p>
+            <div class="pillars-list">
+              <div class="pillar-item">
+                <strong>01. Typography Mastery</strong>
+                <p>Curated serif display and geometric sans pairings built on strict harmonic ratios.</p>
+              </div>
+              <div class="pillar-item">
+                <strong>02. Emotional Resonance</strong>
+                <p>Every color token and hover state evokes craftsmanship, trust, and distinction.</p>
+              </div>
+              <div class="pillar-item">
+                <strong>03. Uncompromising Speed</strong>
+                <p>Flawless 60fps animations and lightweight, accessible semantic code.</p>
+              </div>
+              <div class="pillar-item">
+                <strong>04. Seamless Handover</strong>
+                <p>Structured Figma/XD tokens and clean PHP/HTML templates for effortless maintenance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-collage">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Design Studio Environment" class="about-primary-img">
+            <div class="about-badge-card">
+              <div style="font-family:var(--font-display); font-size:1.4rem; color:var(--gold-primary); font-weight:700;">
+                10+ Years
+              </div>
+              <div style="font-size:0.8rem; color:var(--text-secondary);">
+                Specializing in Premium Brand Revivals
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DESIGN SYSTEM & HANDOVER SPECIFICATION (Deliverable #4)
+         ========================================================================== -->
+    <section id="handover-guide" class="handover-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">Client Deliverable #4</div>
+          <h2 class="section-title">Design Handover Guide & <span class="text-gold">UI Token Library</span></h2>
+          <p class="section-desc">
+            A comprehensive, organized handover system. Click on any color token below to instantly copy its HEX code, or explore typography scales, 8-point spacing rules, and reusable UI components.
+          </p>
+        </div>
+
+        <div class="handover-card">
+          <!-- Tabs Navigation -->
+          <div class="handover-tabs">
+            <button class="handover-tab-btn active" data-target="tab-colors">Color Tokens</button>
+            <button class="handover-tab-btn" data-target="tab-typography">Typography Scale</button>
+            <button class="handover-tab-btn" data-target="tab-spacing">8-Point Spacing</button>
+            <button class="handover-tab-btn" data-target="tab-components">UI Components</button>
+          </div>
+
+          <!-- Tab 1: Colors -->
+          <div id="tab-colors" class="handover-tab-pane active">
+            <p style="margin-bottom: var(--space-lg); font-size: 0.9rem; color: var(--text-secondary);">
+              Click any swatch to copy its hexadecimal token to your clipboard:
+            </p>
+            <div class="color-swatch-grid">
+              <div class="color-swatch-card" data-hex="#0A0B0E">
+                <div class="swatch-color-box" style="background: #0A0B0E; border-bottom: 1px solid rgba(255,255,255,0.1);"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Obsidian Deep (Primary)</div>
+                  <div class="swatch-hex"><span>#0A0B0E</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#181B24">
+                <div class="swatch-color-box" style="background: #181B24;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Graphite Surface</div>
+                  <div class="swatch-hex"><span>#181B24</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#D4AF37">
+                <div class="swatch-color-box" style="background: #D4AF37;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Champagne Gold (Accent)</div>
+                  <div class="swatch-hex"><span>#D4AF37</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#F5D77F">
+                <div class="swatch-color-box" style="background: #F5D77F;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Champagne Shimmer</div>
+                  <div class="swatch-hex"><span>#F5D77F</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#FCFCFD">
+                <div class="swatch-color-box" style="background: #FCFCFD;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Alabaster Pearl (Text)</div>
+                  <div class="swatch-hex" style="color:#000;"><span>#FCFCFD</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+
+              <div class="color-swatch-card" data-hex="#A6ADBB">
+                <div class="swatch-color-box" style="background: #A6ADBB;"></div>
+                <div class="swatch-meta">
+                  <div class="swatch-name">Warm Slate (Secondary)</div>
+                  <div class="swatch-hex"><span>#A6ADBB</span> <span>📋 Copy</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Typography Scale -->
+          <div id="tab-typography" class="handover-tab-pane">
+            <table class="type-specimen-table">
+              <thead>
+                <tr>
+                  <th>Level / Role</th>
+                  <th>Font Family</th>
+                  <th>Size / Weight</th>
+                  <th>Preview</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Display 01 (Hero)</strong></td>
+                  <td>Cinzel / Cormorant</td>
+                  <td>48px - 72px / 600</td>
+                  <td><span style="font-family:var(--font-serif); font-size:1.8rem;">Timeless Modern Prestige</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Heading 02 (Section)</strong></td>
+                  <td>Cormorant Garamond</td>
+                  <td>36px - 48px / 600</td>
+                  <td><span style="font-family:var(--font-serif); font-size:1.4rem;">Architectural Harmony</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Heading 03 (Card)</strong></td>
+                  <td>Cinzel / Sans</td>
+                  <td>22px - 26px / 600</td>
+                  <td><span style="font-family:var(--font-display); font-size:1.15rem;">Bespoke Experience</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Body Text</strong></td>
+                  <td>Plus Jakarta Sans</td>
+                  <td>16px / 400 (Line Height 1.7)</td>
+                  <td><span style="font-family:var(--font-sans); font-size:0.95rem; color:var(--text-secondary);">Editorial clarity crafted for sustained reading comfort.</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Accent / Monospace</strong></td>
+                  <td>Space Grotesk</td>
+                  <td>12px - 14px / 600 Uppercase</td>
+                  <td><span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--gold-primary);">TOKEN.LUXE.2026</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tab 3: Spacing Scale -->
+          <div id="tab-spacing" class="handover-tab-pane">
+            <div class="spacing-scale-visualizer">
+              <div class="spacing-row">
+                <div class="spacing-label">--space-2xs (4px)</div>
+                <div class="spacing-bar" style="width: 4px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Micro padding / badges</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-xs (8px)</div>
+                <div class="spacing-bar" style="width: 8px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Base 8pt grid unit</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-md (16px)</div>
+                <div class="spacing-bar" style="width: 16px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Standard input / button padding</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-lg (24px)</div>
+                <div class="spacing-bar" style="width: 24px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Card inner margin</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-xl (32px)</div>
+                <div class="spacing-bar" style="width: 32px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Component separation</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-2xl (48px)</div>
+                <div class="spacing-bar" style="width: 48px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Section inner spacing</span>
+              </div>
+              <div class="spacing-row">
+                <div class="spacing-label">--space-4xl (96px)</div>
+                <div class="spacing-bar" style="width: 96px;"></div>
+                <span style="font-size:0.75rem; color:var(--text-muted);">Major section vertical breath</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: UI Components -->
+          <div id="tab-components" class="handover-tab-pane">
+            <div style="display:flex; flex-direction:column; gap: var(--space-xl);">
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:12px; color:var(--gold-primary);">Interactive Buttons & Badges</h4>
+                <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+                  <button class="btn btn-primary btn-sm">Primary Gold</button>
+                  <button class="btn btn-secondary btn-sm">Glass Secondary</button>
+                  <button class="btn btn-outline btn-sm">Gold Outline</button>
+                  <span class="badge-pill" style="margin-bottom:0;">Live Pill Tag</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:12px; color:var(--gold-primary);">Form Controls & Inputs</h4>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+                  <input type="text" class="form-control" placeholder="Focused input with gold aura..." value="Excellence in every pixel">
+                  <input type="email" class="form-control" placeholder="Enter executive email address...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MULTI-STEP PRIVATE CONSULTATION / INQUIRY WIZARD
+         ========================================================================== -->
+    <section id="consultation" class="consultation-section">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <div class="badge-pill">Private Inquiry</div>
+          <h2 class="section-title">Initiate Your <span class="text-gold">Brand Transformation</span></h2>
+          <p class="section-desc">
+            Complete the 3-step project brief below to discuss your existing website URLs, brand assets, and custom deliverables.
+          </p>
+        </div>
+
+        <div class="booking-wizard-card">
+          <!-- Wizard Steps Progress Indicator -->
+          <div class="wizard-steps-indicator">
+            <div class="step-node active" data-step="1">01</div>
+            <div class="step-node" data-step="2">02</div>
+            <div class="step-node" data-step="3">03</div>
+          </div>
+
+          <form id="consultation-form">
+            <!-- Step 1: Project Scope -->
+            <div id="step-pane-1" class="wizard-step-pane active">
+              <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 1: Select Redesign Scope</h3>
+              <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                Which aspects of your existing platform need elevation?
+              </p>
+
+              <div class="radio-cards-grid" style="margin-bottom: var(--space-xl);">
+                <div class="radio-card selected" data-value="full-redesign">
+                  <div style="font-size: 1.5rem; margin-bottom: 6px;">🏛️</div>
+                  <strong style="display:block; margin-bottom:4px;">Full Website Redesign</strong>
+                  <span style="font-size: 0.75rem; color:var(--text-muted);">Homepage to all deep pages</span>
+                </div>
+                <div class="radio-card" data-value="design-system">
+                  <div style="font-size: 1.5rem; margin-bottom: 6px;">📐</div>
+                  <strong style="display:block; margin-bottom:4px;">Figma/XD System & Guide</strong>
+                  <span style="font-size: 0.75rem; color:var(--text-muted);">Organized components & tokens</span>
+                </div>
+                <div class="radio-card" data-value="php-html">
+                  <div style="font-size: 1.5rem; margin-bottom: 6px;">⚡</div>
+                  <strong style="display:block; margin-bottom:4px;">PHP / Web Development</strong>
+                  <span style="font-size: 0.75rem; color:var(--text-muted);">Responsive code & deployment</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="existing-url">Current Website URL(s)</label>
+                <input type="url" id="existing-url" class="form-control" placeholder="https://yourbrand.com" required>
+              </div>
+
+              <div class="wizard-nav-buttons" style="justify-content: flex-end;">
+                <button type="button" class="btn btn-primary btn-wizard-next">Continue to Timeline &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Budget & Timeline -->
+            <div id="step-pane-2" class="wizard-step-pane">
+              <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 2: Investment & Target Launch</h3>
+              <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                Help us align with your operational milestones.
+              </p>
+
+              <div class="form-group">
+                <label class="form-label">Estimated Project Investment</label>
+                <div class="radio-cards-grid">
+                  <div class="radio-card selected">
+                    <strong>$3,500 - $7,500</strong>
+                    <div style="font-size:0.75rem; color:var(--text-muted);">Curated Refresh</div>
+                  </div>
+                  <div class="radio-card">
+                    <strong>$7,500 - $18,000</strong>
+                    <div style="font-size:0.75rem; color:var(--text-muted);">Flagship Overhaul</div>
+                  </div>
+                  <div class="radio-card">
+                    <strong>$18,000+</strong>
+                    <div style="font-size:0.75rem; color:var(--text-muted);">Enterprise Atelier</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="target-timeline">Desired Completion Date</label>
+                <select id="target-timeline" class="form-control">
+                  <option>Immediate (Within 2 - 3 Weeks)</option>
+                  <option selected>Standard (Within 4 - 6 Weeks)</option>
+                  <option>Flexible / Quality-First</option>
+                </select>
+              </div>
+
+              <div class="wizard-nav-buttons">
+                <button type="button" class="btn btn-secondary btn-wizard-prev">&larr; Back</button>
+                <button type="button" class="btn btn-primary btn-wizard-next">Continue to Details &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact & Vision -->
+            <div id="step-pane-3" class="wizard-step-pane">
+              <h3 style="font-size: 1.35rem; margin-bottom: 8px;">Step 3: Executive Details & Vision</h3>
+              <p class="text-secondary" style="font-size: 0.875rem; margin-bottom: var(--space-xl);">
+                We treat every consultation under strict non-disclosure.
+              </p>
+
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md);">
+                <div>
+                  <label class="form-label" for="client-name">Your Full Name</label>
+                  <input type="text" id="client-name" class="form-control" placeholder="e.g. Julian Vance" required>
+                </div>
+                <div>
+                  <label class="form-label" for="client-email">Executive Email</label>
+                  <input type="email" id="client-email" class="form-control" placeholder="julian@enterprise.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project-vision">Key Pain Points with Current Website</label>
+                <textarea id="project-vision" class="form-control" rows="4" placeholder="Mention any specific pages, aesthetic preferences, typography ideas, or existing assets to retain..." required></textarea>
+              </div>
+
+              <div class="wizard-nav-buttons">
+                <button type="button" class="btn btn-secondary btn-wizard-prev">&larr; Back</button>
+                <button type="submit" class="btn btn-primary">Transmit Brief & Book Consultation ✦</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <div>
+            <div class="brand-logo">
+              <div class="brand-emblem">V</div>
+              <div class="brand-text-block">
+                <span class="brand-name">Vanguard</span>
+                <span class="brand-sub">Atelier &bull; Digital</span>
+              </div>
+            </div>
+            <p class="footer-brand-desc">
+              Transforming conventional websites into modern, polished, and timeless luxury showcases through meticulous design engineering.
+            </p>
+            <div style="font-size:0.8rem; color:var(--gold-primary); font-family:var(--font-mono);">
+              EST. 2016 &bull; NEW YORK / ZURICH / TOKYO
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Redesign Scope</h4>
+            <ul class="footer-links-list">
+              <li><a href="#transformation">Visual & UX Refresh</a></li>
+              <li><a href="#services">Responsive Engineering</a></li>
+              <li><a href="#handover-guide">Figma & Adobe XD Tokens</a></li>
+              <li><a href="#handover-guide">Handover Specifications</a></li>
+              <li><a href="#services">PHP / HTML Architecture</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Selected Pages</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero">Homepage Architecture</a></li>
+              <li><a href="#about">Philosophy & Heritage</a></li>
+              <li><a href="#services">Capabilities & Pricing</a></li>
+              <li><a href="#portfolio">Curated Works Showcase</a></li>
+              <li><a href="#consultation">Private Booking Inquiry</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Private Dispatch</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:12px;">
+              Receive quarterly insights on luxury digital architecture and brand prestige.
+            </p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to Private Dispatch');">
+              <input type="email" class="newsletter-input" placeholder="Enter executive email..." required>
+              <button type="submit" class="btn btn-primary btn-sm">Join</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>&copy; 2026 VANGUARD ATELIER. All rights reserved. Built for Guaranteed Brand Elevation.</div>
+          <div style="display:flex; gap:20px;">
+            <a href="#handover-guide" style="color:var(--text-muted); text-decoration:none;">Design Specs</a>
+            <a href="#transformation" style="color:var(--text-muted); text-decoration:none;">Before/After</a>
+            <a href="#consultation" style="color:var(--gold-primary); text-decoration:none;">Request Proposal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- End #viewport-stage -->
+
+  <!-- ==========================================================================
+       CASE STUDY DETAIL MODAL DIALOG
+       ========================================================================== -->
+  <div id="case-study-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Case Study">&times;</button>
+      <img id="modal-img" src="" alt="Case Study Hero" class="modal-hero-img">
+      <div class="modal-content-body">
+        <div id="modal-category" class="badge-pill" style="margin-bottom: 8px;">Category</div>
+        <h2 id="modal-title" style="font-size: 2.2rem; margin-bottom: 8px;">Case Study Title</h2>
+        <div id="modal-impact" style="font-size: 1rem; color: var(--gold-primary); font-weight: 600; margin-bottom: var(--space-lg);">
+          Impact Metric
+        </div>
+        <p id="modal-desc" style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: var(--space-xl);">
+          Case study overview text...
+        </p>
+
+        <h4 style="font-family:var(--font-display); font-size: 1.1rem; margin-bottom: 12px;">Deliverables Provided:</h4>
+        <ul id="modal-deliverables" class="service-deliverables" style="margin-bottom: var(--space-xl);">
+          <!-- Populated by JS -->
+        </ul>
+
+        <div style="display:flex; justify-content:flex-end;">
+          <a href="#consultation" class="btn btn-primary" onclick="document.getElementById('case-study-modal').classList.remove('active'); document.body.style.overflow='';">
+            Inquire About Similar Redesign &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
